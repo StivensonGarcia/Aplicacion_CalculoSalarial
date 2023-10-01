@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/background_light"
+    tools:context=".MainActivity">
+
+    <!-- Título de la aplicación -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de Salario"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textColor="#4285F4" />
+
+    <!-- Campo de salario base -->
+    <TextView
+        android:id="@+id/salarioBaseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salario Base:"
+        android:layout_below="@+id/appTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/salarioBaseEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salarioBaseLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:inputType="numberDecimal"
+        android:hint="Ingrese el salario base"
+        android:importantForAccessibility="auto"
+        android:textColor="#000000"
+        android:textColorHint="#7F7F7F"
+        android:backgroundTint="#4285F4" />
+
+    <!-- Campo de horas extras -->
+    <TextView
+        android:id="@+id/horasExtrasLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horas Extras:"
+        android:layout_below="@+id/salarioBaseEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/horasExtrasEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horasExtrasLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:hint="Ingrese las horas extras"
+        android:importantForAccessibility="auto"
+        android:textColor="#000000"
+        android:textColorHint="#7F7F7F"
+        android:backgroundTint="#4285F4" />
+
+    <!-- Campo de bonificación -->
+    <TextView
+        android:id="@+id/bonificacionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bonificación:"
+        android:layout_below="@+id/horasExtrasEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/bonificacionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bonificacionLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:hint="Ingrese 1 si hay bonificación, 0 si no la hay"
+        android:importantForAccessibility="auto"
+        android:textColor="#000000"
+        android:textColorHint="#7F7F7F"
+        android:backgroundTint="#4285F4" />
+
+    <!-- Botón de cálculo -->
+    <Button
+        android:id="@+id/calcularButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_below="@+id/bonificacionEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4285F4" />
+
+    <!-- Resultado -->
+    <TextView
+        android:id="@+id/resultadoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:layout_below="@+id/calcularButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/resultadoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultadoLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+</RelativeLayout>

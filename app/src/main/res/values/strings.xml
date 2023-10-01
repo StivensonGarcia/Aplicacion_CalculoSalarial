@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CashCalc</string>
+    <string name="salario_base_label">Salario Base:</string>
+    <string name="ingrese_salario_base">Ingrese el salario base</string>
+    <string name="horas_extras_label">Horas Extras:</string>
+    <string name="ingrese_horas_extras">Ingrese las horas extras</string>
+    <string name="bonificacion_label">Bonificación:</string>
+    <string name="ingrese_bonificacion">Ingrese 1 si hay bonificación, 0 si no la hay</string>
+    <string name="calcular_button">Calcular</string>
+    <string name="resultado_label">Resultado:</string>
+
+</resources>
